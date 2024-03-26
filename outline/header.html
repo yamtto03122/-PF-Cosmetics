@@ -1,0 +1,56 @@
+<header class="header">
+    <div class="nav">
+        <ul>
+            <li class="nav-ico">
+                <a href="#"><img src="/images/search_ico.png" alt="search"></a>
+            </li>
+            <li class="nav-ico">
+                <a href="#"><img src="/images/cart_ico.png" alt="cart"></a>
+            </li>
+            <li class="nav-ico">
+                <a href="#"><img src="/images/myPage_ico.png" alt="my page"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-logo">
+        <a href="#"><img class="" src="/images/logo_w.png" alt="logo"></a>
+    </div>
+    <ul id="gnb" class="">
+        <li class="main-menu"><a href="#">Brand</a></li>
+        <li class="main-menu">
+            <a href="#">Products</a>
+            <ul class="snb">
+                <li class="menu-list"><a href="#">토너/미스트</a></li>
+                <li class="menu-list"><a href="#">세럼/에센스</a></li>
+                <li class="menu-list"><a href="#">크림/로션</a></li>
+                <li class="menu-list"><a href="#">마스크/팩</a></li>
+                <li class="menu-list"><a href="#">선케어</a></li>
+            </ul>
+        </li>
+        <li class="main-menu"><a href="#">Event</a></li>
+        <li class="main-menu">
+            <a href="#">Community</a>
+            <ul class="snb">
+                <li class="menu-list"><a href="#">notice</a></li>
+                <li class="menu-list"><a href="#">FAQ</a></li>
+                <li class="menu-list"><a href="#">review</a></li>
+                <li class="menu-list"><a href="#">1:1 문의</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<script>
+
+$(document).ready(function(){
+    $('#gnb > .snb').hide();
+
+    $('.main-menu').mouseenter(function(){
+        $(this).children('.snb').stop().slideDown();
+
+    });
+    $('.main-menu').mouseleave(function(){
+        $(this).children('.snb').stop().slideUp();
+    });
+});
+</script>

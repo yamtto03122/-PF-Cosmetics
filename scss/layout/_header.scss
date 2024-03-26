@@ -1,0 +1,119 @@
+.header{
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 25px 0;
+    a{
+        color: #ffffff;
+    }
+    .nav{
+        position: relative;
+        ul{
+            position: absolute;
+            right: 5%;
+            display: flex;
+            li{
+                height: 20px;
+                padding: 0 10px;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .main-logo{
+        width: 50px;
+        
+        margin: 25px auto 20px;
+    }
+    #gnb{
+        display: flex;
+        justify-content: center;
+        .main-menu{
+            padding: 15px;
+            margin: 15px 10px;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            font-family: $en;
+            letter-spacing: 1px;
+            font-size: 15px;
+            .snb{
+                display: none;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: left;
+                margin-top: 20px;
+                font-size: 14px;
+                width: max-content;
+                padding: 13px 20px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+                font-family: $ko;
+                .menu-list{
+                    padding: 7px 0;
+                    position: relative;
+                    width: fit-content;
+                    a{
+                        color: #ffffff;
+                        opacity: 0.75;
+                    }
+                }
+                .menu-list:hover{
+                    a{
+                        opacity: 1;
+                        transition: opacity 0.3s 0s
+                    }
+                }
+                .menu-list::after{
+                    content: "";
+                    width: 0px;
+                    height: 1px;
+                    background: #ffffff;
+                    position: absolute;
+                    left: 0;
+                    bottom: 4px;
+                    opacity: 0;
+                    transition: width 0s 0.3s, opacity 0.3s 0s;
+                }
+
+                .menu-list:hover::after{
+                    width: 100%;
+                    opacity: 1;
+                    transition: width 0.3s 0s, opacity 0s;
+                }
+            }
+            .snb::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border: 1px solid #000;
+                display: none;
+            }
+        }
+        .main-menu::after{
+            content: "";
+            width: 0px;
+            height: 1px;
+            background: #ffffff;
+            position: absolute;
+            left: 14px;
+            bottom: 10px;
+            opacity: 0;
+            transition: width 0s 0.3s, opacity 0.3s 0s;
+        }
+        .main-menu:hover::after{
+            width: calc(100% - 30px);
+            opacity: 1;
+            transition: width 0.3s 0s, opacity 0s;
+        }
+    }
+}
+
