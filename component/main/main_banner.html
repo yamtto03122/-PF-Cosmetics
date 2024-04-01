@@ -1,5 +1,37 @@
-<div class="mainBanner mbn01">
-    <img src="/images/main_banner01.jpg">
+<div class="slide_div_wrap">
+    <div class="slide_div">
+        <div>
+                <div class="main_bn_textWrap">
+                    <h3>BEST</h3>
+                    <h1>마르지 않는 탄탄한 장벽<br>세라마이딘 크림</h1>
+                    <p></p>
+                    <a>
+                        <div class="main_bn_btn">
+                            SHOP NOW
+                        </div>
+                    </a>
+                </div>
+                <img src="/images/main/main_banner01.jpg">
+        </div>
+        <div>
+                <img src="/images/main/main_banner02.jpg">
+        </div>
+        <div>
+                <img src="/images/main/main_banner03.jpg">
+        </div>				
+    </div>	
 </div>
-<div class="main-banner mbn02"></div>
-<div class="main-banner mbn03"></div>
+
+<script>
+   $(document).ready(function(){
+        $('.slide_div').slick({
+            dots: true,
+            infinite: true,
+            speed: 550,
+            fade: true,
+            cssEase: 'linear',
+            autoplay : true,
+            autoplaySpeed: 5000
+        });
+   });
+</script>

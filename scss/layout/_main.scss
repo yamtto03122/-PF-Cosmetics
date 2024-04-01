@@ -13,3 +13,133 @@
         object-fit: cover;
     }
 }
+
+.slick-slide{
+    height: 80vh;
+    min-height: 610px;
+}
+.slick-dots{
+    bottom: 20px;
+}
+
+.slick-prev, .slick-next{
+    z-index: 99;
+    bottom: 10px;
+    top: auto;
+}
+.slick-prev{
+    left: 40%;
+}
+.slick-next{
+    right: 40%;
+}
+
+
+.main_bn_textWrap{
+    z-index: 999;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    h3{
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 35px;
+        line-height: 1.3;
+    }
+    a{
+        
+        color: #ffffff;
+        .main_bn_btn{
+            width: 160px;
+            padding: 15px 0;
+            border-radius: 100%;
+            border: 1px solid #ffffff;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+
+/* section 01 */
+#main_sec01{
+        max-width: 1024px ;
+        margin: 130px auto;
+        padding: 0 7%;
+    .sec01{
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        .sec01_wrap{
+            p{
+                writing-mode: vertical-lr;
+                margin-right: 5%;
+                text-transform: uppercase;
+                font-weight: 200;
+                color: #A8917D;
+            }
+            width: 65%;
+            overflow: hidden;
+            display: flex;
+            gap: 8px;
+            .m-banner{
+                width: 50%;
+            }
+            .sec01_flex{
+                width: 50%;
+                max-height: 310px;
+                display: flex;
+                gap: 8px;
+                div{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+        }
+        .text_wrap{
+            background-color: #F5EDE6;
+            text-align: center;
+            padding: 60px 40px;
+            border-radius: 150px;
+            color: #625750;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .ttl{
+                font-family: $en;
+                font-size: 28px;
+                line-height: 1.2;
+            }
+            .txt{
+                line-height: 1.3;
+                font-size: 13px;
+                max-width: 155px;
+            }
+            .shopNow{
+                border: 1px solid #625750;
+                width: 130px;
+                height: 40px;
+                line-height: 41px;
+                border-radius: 100%;
+                display: inline-block;
+                font-size: 13px;
+                color: #625750;
+            }
+        }
+    }
+
+}
